@@ -1,0 +1,56 @@
+@import "../varibles";
+@import "../general";
+@import "../mixer";
+
+.element {
+    background: #f67e7e url(/images/element-halqa.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.inner-element {
+    padding: 76px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.element-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #012F34;
+}
+
+
+
+.element-btn {
+    @include site-btn;
+    border: 2px solid #012F34;
+    color: #012F34;
+}
+
+.element-btn:hover {
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.element-btn:active {
+    transform: scale(0.97);
+    box-shadow: inset 0 0 5px 5px tomato;
+}
+
+@include breakpoint-tablet(768px) {
+    .element-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@include breakpoint-tablet(350px) {
+    .element-title {
+        text-align: center;
+    }
+}
