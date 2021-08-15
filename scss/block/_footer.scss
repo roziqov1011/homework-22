@@ -88,7 +88,7 @@
     line-height: 25px;
     text-align: right;
     color: #FFFFFF;
-    mix-blend-mode: normal;
+    white-space: nowrap;
     opacity: 0.6;
 }
 @include breakpoint-tablet(768px){
@@ -105,6 +105,12 @@
         top: 0px;
         text-align: right;
     }
+    .footer-right{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .footer-right__list{
         position: absolute;
         left: 0;
@@ -112,11 +118,14 @@
     }
 
     .footer-right__info{
-        transform: translateY(80px) translateX(-50px);
+        margin-left: auto;
+       margin-right: auto;
+        transform: translateY(80px) translateX(-40px);
         margin-block-end: 0em;
-        white-space: nowrap;
+        margin-right: 40px;
     }
 }
+
 @include breakpoint-mobile(410px){
    .inner-footer{
        display: flex;
@@ -139,9 +148,11 @@
    }
    .footer-right__list{
     position: static;
+    transform: translateX(-20%);
     padding-bottom: 0;
    }
    .footer-right__info{
        margin-top: 0;
+       font-size: 14px;
    }
 }
