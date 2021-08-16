@@ -1179,8 +1179,12 @@ body {
     flex-direction: column;
   }
 
-  .footer-left__list {
+  .footer-left {
     margin-left: 20px;
+  }
+
+  .footer-left__list {
+    margin-left: 10px;
   }
 
   .footer-midle {
