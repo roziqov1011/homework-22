@@ -70,7 +70,11 @@
     padding-right: 40px;
   }
 }
-@include breakpoint-mobile(640px){
+@include breakpoint-mobile(670px){
+    .inner-header{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     .site-nav__list{
         display: none;
     }
@@ -81,6 +85,9 @@
         display: block;
         border: none;
         background-color: transparent;
+    }
+    .header-hamburger__img{
+        display: block;
     }
     
 }

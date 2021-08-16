@@ -47,14 +47,16 @@
         font-size: 32px;
         line-height: 32px;
     }
-    .element-btn{
-        margin-bottom: 30px;
-    }
 }
 
-@include breakpoint-tablet(350px) {
+@include breakpoint-tablet(440px) {
     .element-title {
         text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .element-btn{
+        margin-bottom: 30px;
     }
     
 }

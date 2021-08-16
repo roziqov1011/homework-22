@@ -126,10 +126,13 @@
     }
 }
 
-@include breakpoint-mobile(410px){
+@include breakpoint-mobile(440px){
    .inner-footer{
        display: flex;
        flex-direction: column;
+   }
+   .footer-left__list{
+       margin-left: 20px;
    }
    .footer-midle{
        width: auto;
